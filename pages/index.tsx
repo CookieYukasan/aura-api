@@ -46,7 +46,7 @@ export default function Home() {
         title: 'Ocorreu um erro.',
         description: 'Verifique seu formulário e tente novamente.',
         status: 'error',
-        duration: 1000,
+        duration: 1500,
         isClosable: false,
       });
 
@@ -68,7 +68,7 @@ export default function Home() {
       description: 'Entraremos em contato em breve.',
       status: 'success',
       duration: 3000,
-      isClosable: true,
+      isClosable: false,
     });
   };
   return (
@@ -88,7 +88,7 @@ export default function Home() {
     >
       <Flex gridArea="logo" flexDir="column" alignItems="flex-start">
         <img
-          width="180px"
+          width="200px"
           style={{ borderRadius: '20em', margin: '0 auto' }}
           src="https://auradiscord.com/src/logo.png"
           alt="Aura"
@@ -101,6 +101,9 @@ export default function Home() {
           width={500}
           textAlign="center"
           color="gray.600"
+          p={3}
+          backgroundColor="white"
+          borderRadius={8}
         >
           Aura é um bot para servidores de Discord e que agora tem sua api
           própria e com funções que englobam Inteligencia Artificial, Stats de
@@ -138,6 +141,7 @@ export default function Home() {
         <Skeleton isLoaded={!loading} mt={2}>
           <Input
             placeholder="Email"
+            type="email"
             onChange={(e) => setEmail(e.target.value)}
           />
         </Skeleton>
@@ -153,7 +157,7 @@ export default function Home() {
           <Textarea
             height="6.2rem"
             backgroundColor="white"
-            focusBorderColor="green.500"
+            focusBorderColor="cyan.500"
             borderRadius="sm"
             placeholder="Fale sobre seu projeto"
             resize="none"
@@ -164,10 +168,10 @@ export default function Home() {
         <Skeleton isLoaded={!loading} mt={6}>
           <Button
             width="100%"
-            backgroundColor="green.500"
+            backgroundColor="cyan.500"
             height="50px"
             borderRadius="sm"
-            _hover={{ backgroundColor: 'green.600' }}
+            _hover={{ backgroundColor: 'cyan.600' }}
             boxShadow="rgba(50, 50, 50, 0.72) 0px 5px 7px 0px"
             onClick={handleSendForm}
             color="white"
