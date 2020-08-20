@@ -88,7 +88,7 @@ export default function Home() {
           width={500}
           textAlign="center"
         >
-          Aura é um bot para servidores de Discord e que agora tem sua api própria e com funções que englobam Inteligencia Artificial, Stats de games, e mais!
+          Aura é um bot para servidores de Discord e que agora tem sua api própria e com funções que englobam Inteligencia Artificial, Stats de jogos e muito mais!
         </Heading>
       </Flex>
 
