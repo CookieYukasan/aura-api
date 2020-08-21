@@ -14,8 +14,8 @@ class MyDocument extends Document<DocumentProps> {
           <meta name="description" content="" />
           <meta property="og:site_name" content="Aura API" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Aura API" />
-          <meta property="og:description" content="teste" />
+          <meta property="og:title" content="Formulário" />
+          <meta property="og:description" content="q se foda" />
           <meta property="og:url" content="https://aura-api.vercel.app/" />
           <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
